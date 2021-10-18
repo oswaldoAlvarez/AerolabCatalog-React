@@ -19,7 +19,7 @@ export const GenericHeader: FunctionComponent<Props> = ({ logo, username, amount
                     <div className='username'>{username}</div>
                     <div className='amountContainer'>
                         {amount}
-                        <img src={coin} />
+                        <img src={coin} alt='imagenCoin' />
                     </div>
                 </div>
                 :

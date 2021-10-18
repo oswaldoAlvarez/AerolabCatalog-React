@@ -17,15 +17,15 @@ interface Props {
 
 export const CardComponent: FunctionComponent<Props> = ({ name, category, image, showModal, setShowModal, id, cost }) => {
 
-    const showBuiIcon = showModal === id ? buyIconWhite : buyIconBlue;
+    const showBuyIcon = showModal === id ? buyIconWhite : buyIconBlue;
     const changeModal = () => showModal === id ? setShowModal(false) : setShowModal(id);
 
     return (
         <div className='cardContainer' onClick={changeModal}>
             <div className='iconContainer'>
-                <img className='buyIcon' src={showBuiIcon} />
+                <img className='buyIcon' src={showBuyIcon} alt='BuyIcon' />
             </div>
-            <img className='cardImage' src={image} />
+            <img className='cardImage' src={image} alt='imagenProducto' />
             <div>
                 <div className='tipoProducto' key={category}>{category}</div>
                 <div className='tituloProducto' key={name}>{name}</div>
@@ -35,7 +35,7 @@ export const CardComponent: FunctionComponent<Props> = ({ name, category, image,
                     <div className='modal'>
                         <div className='costoTotal'>
                             {cost}
-                            <img className='coinModal' src={coin} />
+                            <img className='coinModal' src={coin} alt='imagenCoin' />
                         </div>
                         <div className='redeemBtn' >Redeem now</div>
                     </div>

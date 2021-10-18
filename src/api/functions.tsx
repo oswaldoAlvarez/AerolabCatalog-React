@@ -1,7 +1,6 @@
 import React from 'react'
 import Api from './API';
-import { getUserResponse, getProductsResponse } from '../interfaces/authInterfaces';
-import { AxiosError } from 'axios'
+import { getUserResponse } from '../interfaces/authInterfaces';
 
 export const GetUsers = async () => {
     try {
@@ -14,7 +13,7 @@ export const GetUsers = async () => {
             redeemHistory: response.data.redeemHistory,
             __V: response.data.__V,
         }
-    } catch (error: any | AxiosError) {
+    } catch (error: any) {
         console.log(`No se ha podido hacer conexión con la API ${error.message} ${error.response.status}`)
     }
 }
@@ -25,7 +24,7 @@ export const GetProducts = async () => {
         return {
             producto: response.data,
         }
-    } catch (error: any | AxiosError) {
+    } catch (error: any) {
         console.log(`No se ha podido hacer conexión con la API ${error.message} ${error.response.status}`)
     }
 }

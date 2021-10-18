@@ -6,10 +6,3 @@ export interface getUserResponse {
     redeemHistory: string[] | null;
     __V: number | null;
 }
-
-export interface getProductsResponse {
-    img: any;
-    nameProduct: string;
-    cost: number;
-    category: string;
-}
