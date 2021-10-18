@@ -1,4 +1,3 @@
-import React from 'react'
 import Api from './API';
 import { getUserResponse } from '../interfaces/authInterfaces';
 
