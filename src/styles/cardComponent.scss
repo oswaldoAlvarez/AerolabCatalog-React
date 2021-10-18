@@ -1,0 +1,85 @@
+.productosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 100px;
+    .cardContainer {
+        background: #fff;
+        width: 270px;
+        height: 330px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 3px 6px #dfdfdf;
+        justify-content: center;
+        padding: 20px;
+        margin: 15px 15px;
+        cursor: pointer;
+        .iconContainer {
+            display: flex;
+            justify-content: end;
+            .buyIcon {
+                z-index: 3;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .cardImage {
+            border-bottom: 1px solid lightgray;
+        }
+        .tipoProducto {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #a3a3a3;
+            text-align: left;
+        }
+        .tituloProducto {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #616161;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: -20px;
+            width: 310px;
+            height: 370px;
+            position: absolute;
+            background-image: linear-gradient(-180deg, #0ad4fa 0%, #25bbf1 100%);
+            opacity: 0.9;
+            z-index: 2;
+            .costoTotal {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 36px;
+                color: #ffffff;
+                text-align: center;
+                opacity: 1;
+                .coinModal {
+                    margin-top: 3px;
+                    margin-left: 5px;
+                }
+            }
+            .redeemBtn {
+                background: #ffffff;
+                width: 80%;
+                height: 42px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                margin-top: 10px;
+                opacity: 1;
+            }
+        }
+        .p-absolute {
+            position: absolute;
+        }
+    }
+}

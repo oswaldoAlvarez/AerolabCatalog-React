@@ -1,0 +1,70 @@
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px 25px 0px;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0px 100px;
+    .options {
+        display: flex;
+        align-items: center;
+        .numberProducts {
+            font-size: 24px;
+            color: #616161;
+            padding-right: 20px;
+        }
+        .orderButtons {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            padding-left: 20px;
+            color: #a3a3a3;
+            border-left: 1px solid #d9d9d9;
+            height: 50px;
+        }
+        .articleOrder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #a3a3a3;
+            margin: 0px 20px;
+            background: #ededed;
+            border-radius: 100px;
+            width: 172px;
+            height: 48px;
+            cursor: pointer;
+        }
+        .activeArticle {
+            background: #0ad4fa;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .optionsContainer {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        .options {
+            flex-direction: column;
+            .orderButtons {
+                padding: 0;
+                border-left: 0;
+            }
+            .articleOrder {
+                margin: 5px 0 5px 0;
+            }
+        }
+        img {
+            width: 50px;
+            margin-top: 10px;
+        }
+    }
+}
